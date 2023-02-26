@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ATM</title>
+      <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- ----------------- Bootstrap header START ----------------- -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <style>
+        .deposit {
+          background-color: white;
+          border: 6px solid #0ff166;
+          font-weight: bold;
+          border-radius: 10px;
+          width: 150px;
+        }
+        .withdrawal {
+          background-color: white;
+          border: 6px solid #e63232;
+          font-weight: bold;
+          border-radius: 10px;
+          width: 150px;
+        }
+        #interface {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+        .selectedDepo{
+          background-color: #0ff166;
+        }
+        body{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #333;
+          color: white;
+          text-shadow: 1px 1px black;
+        }
+        #total {
+          text-align: center;
+        }
+        #submitMe {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+        }
+
+        #final {
+          background-color: white;
+          border: 6px solid #0fc4f1;
+          font-weight: bold;
+          border-radius: 10px;
+          width: 150px;
+        }
+
+        #numberBox {
+          border-radius: 10px;
+          text-align: center;
+          font-size: 1.5rem;
+          width: 200px;
+        }
+
+        #buttonSection{
+          flex-direction: row;
+        }
+
+        h1 {
+          color: orangered;
+          font-weight: bold;
+          font-family: arial;
+          text-shadow: 1px 1px black;
+        }
+
+        #root {
+          border: 5px solid white;
+          padding: 10px;
+          border-radius: 20px;
+        }
+      </style>
+</head>
+<body>
+    <h1 style="font-family: Arial">ATM</h1>
+    <div id="root"></div>
+    <!-- Load React. -->
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="atm.jsx" type="text/babel" defer></script>
+    <!-- Load our React component. -->
+</body>
+</html>
